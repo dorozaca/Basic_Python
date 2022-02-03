@@ -25,30 +25,30 @@
 #         print('El numero no fue encontrado en la lista')
     
 
-if __name__== '__main__':
-    run()
+# if __name__== '__main__':
+#     run()
 
-def run():
-    number=int(input('Enter number: '))
-    low= 0.0
-    high=max(1.0, number)
-    base = (low + high)/2
-    error = 0.0001
+# def run():
+#     number=int(input('Enter number: '))
+#     low= 0.0
+#     high=max(1.0, number)
+#     base = (low + high)/2
+#     error = 0.0001
     
 
-    while abs(base**2-number)>=error:
-        print(f'number:{number}, base:{base}, low:{low}, high:{high}, error:{abs(base**2-number)}')
-        if base**2>number:
-            high=base
+#     while abs(base**2-number)>=error:
+#         print(f'number:{number}, base:{base}, low:{low}, high:{high}, error:{abs(base**2-number)}')
+#         if base**2>number:
+#             high=base
 
-        else:
-            low=base
+#         else:
+#             low=base
 
-        base = (low + high)/2
+#         base = (low + high)/2
 
 
-    print(f'La raiz cuadrada de {number} es {base} y el error final es {abs(base**2-number)}')
+#     print(f'La raiz cuadrada de {number} es {base} y el error final es {abs(base**2-number)}')
 
-if __name__== '__main__':
-    run()
+# if __name__== '__main__':
+#     run()
 

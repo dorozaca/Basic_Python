@@ -80,7 +80,7 @@
 # if counter**2==my_number:
 #     print(f'La raiz cuadrada de {my_number} es {counter} ')
 # else:
-#     print(f'{my_number} no tiene una raiz cuadrada exacta') #/
+#     print(f'{my_number} no tiene una raiz cuadrada exacta')
 
 #Aproximacion de soluciones (mi solucion - error)
 # number=int(input('Ingrese un numero: '))
