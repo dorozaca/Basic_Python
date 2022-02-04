@@ -90,7 +90,7 @@
 # while abs((number-base**2)>=epsilon) and base**2<number:
 #     print((number-base**2), base)
 #     base +=epsilon
-    
+
 
 # if abs(number-base**2)<epsilon:
 #     print (f'La raiz cuadrada de {number} es {base}')
@@ -138,7 +138,7 @@
 #     run()
 
 
-#Binary Search with approx.  
+#Binary Search with approx.
 # def run():
 #     number=int(input('Enter number: '))
 #     low=0.0
@@ -161,11 +161,35 @@
 # if __name__== '__main__':
 #     run()
 
- 
+#Unit Test - Pruebas de caja Negra
 
- 
+import unittest
+import cmath
 
- 
+
+
+def root(number1):
+    return cmath.sqrt(number1)
+
+class my_test(unittest.TestCase):
+    def test_positive_numbers(self):
+        number1=25
+
+        resultado = root(number1)
+        self.assertEqual(resultado, 5)
+
+    def test_negative_number(self):
+        number2=-9
+
+        resultado=root(number2)
+        self.assertEqual(resultado, 3j)
+
+
+if __name__=='__main__':
+    unittest.main()
+
+
+
 
 
 
