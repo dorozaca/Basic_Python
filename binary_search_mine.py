@@ -39,23 +39,66 @@
 ##Square root with approx and binary search
 
 
-def run():
-    number=int(input('Enter number: '))
-    low=0.0
-    high=max(1.0,number)
-    base=(low + high)/2
-    error= 0.01
+# def run():
+#     number=int(input('Enter number: '))
+#     low=0.0
+#     high=max(1.0,number)
+#     base=(low + high)/2
+#     error= 0.01
 
-    while abs(base**2-number)>=error:
-        if base**2>number:
+#     while abs(base**2-number)>=error:
+#         if base**2>number:
+#             high=base
+
+#         else:
+#             low=base
+
+#         base=(low + high)/2
+
+#     print(f'Square root of {number} is {base}')    
+
+# if __name__== '__main__':
+#     run()
+
+from email.mime import base
+
+
+def run():
+    num=int(input('Enter number: '))
+    high=max(1,num)
+    low=0.0
+    epsilon=0.01
+    base=low+(high-low)//2
+
+    while(abs(base**2-num)>=epsilon):
+        if base**2>num:
             high=base
 
         else:
             low=base
 
-        base=(low + high)/2
+        base=low+(high-low)//2
 
-    print(f'Square root of {number} is {base}')    
+    print(base)
 
-if __name__== '__main__':
+if __name__=='__main__':
     run()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
